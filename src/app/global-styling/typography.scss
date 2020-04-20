@@ -1,0 +1,107 @@
+/*------------------------------------------------------------------
+[bciti 5000 typography styling]
+
+Project:        bciti lite
+Version:        1.0
+Primary use:    bciti branding
+-------------------------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+@import "./colors";
+@import "./mixins.scss";
+@import "./layout-variables.scss";
+
+$fontFamily: Montserrat, "sans-serif";
+$regularWeight: 400;
+$mediumWeight: 500;
+$semiBoldWeight: 600;
+$boldWeight: 700;
+
+// Use mixins to decluture these rules.
+// @mixin fontStyle($fontFamilyType, $fontSize, $fontWeight, $lineHeight, $color)
+
+h1 {
+  @include fontStyle($fontFamily, 2rem, $boldWeight, 2.5, $bciti-gray-darkest);
+  @media (max-width: $tabletBreakpoint) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+h2 {
+  @include fontStyle($fontFamily, 1.5rem, $semiBoldWeight, 2, $bciti-gray-medium);
+  @media (max-width: $tabletBreakpoint) {
+    h2 {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+h3 {
+  @include fontStyle($fontFamily, 1.125rem, $mediumWeight, 1.8, $bciti-gray-darkest);
+  @media (max-width: $tabletBreakpoint) {
+    h3 {
+      font-size: 1rem;
+    }
+  }
+}
+
+h4 {
+  @include fontStyle($fontFamily, 1rem, $mediumWeight, 1.6, $bciti-gray-darkest);
+  @media (max-width: $tabletBreakpoint) {
+    h4 {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+h5 {
+  @include fontStyle($fontFamily, 0.95rem, $regularWeight, 1.6, $bciti-gray-medium);
+  text-transform: uppercase;
+  @media (max-width: $tabletBreakpoint) {
+    h5 {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+p {
+  // Default paragraph style
+  @include fontStyle($fontFamily, 1rem, $regularWeight, 1.2, $bciti-gray-darkest);
+
+  .large {
+    @include fontStyle($fontFamily, 1.125rem, $mediumWeight, 1.33, $bciti-gray-darkest);
+  }
+  .medium {
+    @include fontStyle($fontFamily, 1.125rem, $regularWeight, 1.25, $bciti-gray-darkest);
+  }
+  .small {
+    @include fontStyle($fontFamily, 0.875rem, $regularWeight, 1.14, $bciti-gray-darkest);
+  }
+  @media (max-width: $tabletBreakpoint) {
+    p {
+      .large {
+        font-size: 1rem;
+      }
+      .medium {
+        font-size: 0.875rem;
+      }
+      .small {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+a {
+  @include fontStyle($fontFamily, 0.875rem, $mediumWeight, 1.14, $bciti-gray-dark);
+}
+
+ul, ol {
+  li {
+    @include fontStyle($fontFamily, 1rem, $regularWeight, 1.2, $bciti-gray-darkest);
+    list-style-type: none;
+  }
+}
+

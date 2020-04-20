@@ -1,0 +1,21 @@
+/*------------------------------------------------------------------
+[For overwriting the Material UI framwork]
+
+Project:        bciti lite
+Version:        1.0
+Primary use:    bciti branding
+-------------------------------------------------------------------*/
+
+mat-divider {
+  &.mat-divider {
+    &.mat-divider-horizontal {
+        color: #7777772e;
+    }
+  }
+}
+
+mat-list-item {
+  a {
+    text-decoration: none;
+  }
+}

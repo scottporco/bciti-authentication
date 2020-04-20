@@ -1,0 +1,308 @@
+/*------------------------------------------------------------------
+[Custom bciti icons]
+
+Project:        bciti lite
+Version:        1.0
+Primary use:    bciti branding 
+-------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'bciti-font-icons';
+    src:    url('bciti-font-icons.ttf') format('truetype'),
+            url('bciti-font-icons.woff') format('woff'),
+            url('bciti-font-icons.svg?vd4qdp#bciti-font-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'bciti-font-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-activites:before {
+    content: "\e900";
+}
+.icon-arrow-down:before {
+    content: "\e901";
+}
+.icon-arrow-left:before {
+    content: "\e902";
+}
+.icon-arrow-right:before {
+    content: "\e903";
+}
+.icon-arrow-up:before {
+    content: "\e904";
+}
+.icon-assembly:before {
+    content: "\e905";
+}
+.icon-bciti-active .path1:before {
+    content: "\e906";
+    color: rgb(126, 200, 227);
+}
+.icon-bciti-active .path2:before {
+    content: "\e907";
+    margin-left: -1em;
+    color: rgb(33, 55, 129);
+}
+.icon-bciti:before {
+    content: "\e908";
+}
+.icon-biblio:before {
+    content: "\e909";
+}
+.icon-calender:before {
+    content: "\e90a";
+}
+.icon-carret-down:before {
+    content: "\e90b";
+}
+.icon-carret-left:before {
+    content: "\e90c";
+}
+.icon-carret-right:before {
+    content: "\e90d";
+}
+.icon-carret-up:before {
+    content: "\e90e";
+}
+.icon-chatbot-active:before {
+    content: "\e90f";
+    color: #213781;
+}
+.icon-chatbot:before {
+    content: "\e910";
+}
+.icon-check:before {
+    content: "\e911";
+}
+.icon-circle-minus:before {
+    content: "\e912";
+}
+.icon-circle-plus:before {
+    content: "\e913";
+}
+.icon-city:before {
+    content: "\e914";
+}
+.icon-close:before {
+    content: "\e915";
+}
+.icon-compass:before {
+    content: "\e916";
+}
+.icon-construction:before {
+    content: "\e917";
+}
+.icon-consultation:before {
+    content: "\e918";
+}
+.icon-discover:before {
+    content: "\e919";
+}
+.icon-edit:before {
+    content: "\e91a";
+}
+.icon-email:before {
+    content: "\e91b";
+}
+.icon-envelope:before {
+    content: "\e91c";
+}
+.icon-family:before {
+    content: "\e91d";
+}
+.icon-faq:before {
+    content: "\e91e";
+}
+.icon-flip:before {
+    content: "\e91f";
+}
+.icon-graffiti:before {
+    content: "\e920";
+}
+.icon-home:before {
+    content: "\e921";
+}
+.icon-ice-rink:before {
+    content: "\e922";
+}
+.icon-image:before {
+    content: "\e923";
+}
+.icon-img-add:before {
+    content: "\e924";
+}
+.icon-info:before {
+    content: "\e925";
+}
+.icon-input-forms:before {
+    content: "\e926";
+}
+.icon-link:before {
+    content: "\e927";
+}
+.icon-list:before {
+    content: "\e928";
+}
+.icon-logout:before {
+    content: "\e929";
+}
+.icon-map-active:before {
+    content: "\e92a";
+    color: #213781;
+}
+.icon-map:before {
+    content: "\e92b";
+}
+.icon-menu:before {
+    content: "\e92c";
+}
+.icon-minus:before {
+    content: "\e92d";
+}
+.icon-more-horizontal:before {
+    content: "\e92e";
+}
+.icon-more-verticle:before {
+    content: "\e92f";
+}
+.icon-my-card-active .path1:before {
+    content: "\e930";
+    color: rgb(33, 55, 129);
+}
+.icon-my-card-active .path2:before {
+    content: "\e931";
+    margin-left: -1em;
+    color: rgb(126, 200, 227);
+}
+.icon-my-card:before {
+    content: "\e932";
+}
+.icon-no-parking:before {
+    content: "\e933";
+}
+.icon-notifications:before {
+    content: "\e934";
+}
+.icon-parking-meter:before {
+    content: "\e935";
+}
+.icon-parking:before {
+    content: "\e936";
+}
+.icon-phone-alerts:before {
+    content: "\e937";
+}
+.icon-plus:before {
+    content: "\e938";
+}
+.icon-pool:before {
+    content: "\e939";
+}
+.icon-pot-hole:before {
+    content: "\e93a";
+}
+.icon-privacy:before {
+    content: "\e93b";
+}
+.icon-qr-code:before {
+    content: "\e93c";
+}
+.icon-question:before {
+    content: "\e93d";
+}
+.icon-receipt:before {
+    content: "\e93e";
+}
+.icon-recyclage:before {
+    content: "\e93f";
+}
+.icon-recycling-bin:before {
+    content: "\e940";
+}
+.icon-requests:before {
+    content: "\e941";
+}
+.icon-restaurant:before {
+    content: "\e942";
+}
+.icon-schedule-meeting:before {
+    content: "\e943";
+}
+.icon-search:before {
+    content: "\e944";
+}
+.icon-services-status:before {
+    content: "\e945";
+}
+.icon-setting:before {
+    content: "\e946";
+}
+.icon-shop:before {
+    content: "\e947";
+}
+.icon-slippery-ice:before {
+    content: "\e948";
+}
+.icon-snow:before {
+    content: "\e949";
+}
+.icon-snowblower:before {
+    content: "\e94a";
+}
+.icon-street-lamp:before {
+    content: "\e94b";
+}
+.icon-tag:before {
+    content: "\e94c";
+}
+.icon-tennis:before {
+    content: "\e94d";
+}
+.icon-theatre:before {
+    content: "\e94e";
+}
+.icon-timer:before {
+    content: "\e94f";
+}
+.icon-town-hall:before {
+    content: "\e950";
+}
+.icon-trash-bin:before {
+    content: "\e951";
+}
+.icon-tree:before {
+    content: "\e952";
+}
+.icon-user-profile:before {
+    content: "\e953";
+}
+.icon-view-off:before {
+    content: "\e954";
+}
+.icon-view:before {
+    content: "\e955";
+}
+.icon-warning:before {
+    content: "\e956";
+}
+.icon-water-in-service:before {
+    content: "\e957";
+}
+.icon-water-service-interuption:before {
+    content: "\e958";
+}

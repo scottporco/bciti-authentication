@@ -1,0 +1,116 @@
+/*------------------------------------------------------------------
+[Style sheet for the dashboard layout menu]
+
+Project:        bciti lite
+Version:        1.0
+Primary use:    Dashboard Menu 
+-------------------------------------------------------------------*/
+
+
+@import '../buttons/buttons.scss';
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  
+  app-menu {
+    -webkit-box-shadow: -2px 5px 7px 2px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: -2px 5px 7px 2px rgba(0, 0, 0, 0.33);
+    box-shadow: -2px 5px 7px 2px rgba(0, 0, 0, 0.33);
+    z-index: 1;
+
+    nav {
+      width: 200px;
+      background: $color;
+      @include transition(width .1s ease);
+
+      header {
+        position: relative;
+        height: 80px;
+        padding: 15px;
+        min-height: 145px;
+        font-size: 16px;
+        color: $bciti-gray-darkest;
+        background: $color;
+
+        .menu-toggler-open {
+          position: absolute;
+          right: 0;
+          top: 50px;
+          font-size: 1.375rem;
+          color: $bciti-gray-medium;
+          @include transition(all .5s ease-in);
+          &:hover{
+            right: 3px;
+            @include transition(all .5s ease-out);
+          }
+        }
+
+        .menu-toggler-close {
+          position: relative;
+          top: 0px;
+          left: 0;
+          margin-bottom: 35px;;
+          font-size: 1.375rem;
+          color: $bciti-gray-medium;
+          @include transition(all .5s ease-in);
+          &:hover{
+            left: 3px;
+            @include transition(all .5s ease-out);
+          }
+        }
+
+        .user-name-menu {
+          margin: 15px 0;
+          text-align: center;
+          @include fontStyle($fontFamily, 1.125rem, $boldWeight, 2, $bciti-gray-darkest);
+        }
+
+        .user-avatar {
+          border-radius: 50%;
+          border: solid 5px $bciti-gray-lightest;
+          display: block;
+          margin: 0 auto;
+        }
+
+      } // .header 
+
+
+      .menu-list-style {
+        @include transition(background-color .3s ease-in);
+        cursor: pointer;
+        &:active{
+          background-color: $bciti-blue-light;
+        }
+        &:hover {
+          background-color: $bciti-blue-lightest;
+          @include transition(background-color .1s ease-out);
+
+        }
+
+        &.active {
+          @include transition(background-color .3s ease);
+          background-color: $bciti-blue;
+          a {
+            color: #fff;
+          }
+        }
+
+      }
+
+
+      .menu-icon {
+        position: relative;
+        top: 6px;
+        padding-right: 35px;
+        font-size: 25px;
+      }
+
+
+      .mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+        padding: 0 0 3.3125rem 0;
+      }
+
+
+    } // .nav
+  } // .app-menu
+} // .wrapper

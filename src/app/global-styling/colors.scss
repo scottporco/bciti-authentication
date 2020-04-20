@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------
+[SCSS bciti branding colours]
+
+Project:        bciti lite
+Version:        1.0
+Primary use:    bciti branding 
+-------------------------------------------------------------------*/
+
+$bciti-blue: #55b4d7;
+$bciti-blue-light: #7ec8e3;
+$bciti-blue-lightest: #d7f4ff;
+$bciti-blue-dark: #213781;
+$bciti-gray-medium: #8792a5;
+$bciti-gray-light: #e1e3ea;
+$bciti-gray-dark: #526483;
+$bciti-gray-darkest: #363e41;
+$bciti-gray-lightest: #f0f2f7;
+$bciti-red: #f03a47;
+$bciti-green: #66c40b;
+$bciti-purple: #ba40b1;
+$bciti-yellow: #f6a513;
+$black: #000000;
+$white: #ffffff;
+$bciti-brown: #97460f;
+
+$color: $white;
+$color-d: darken($color, 5%);
+$color-l: lighten($color, 7.5%);
+

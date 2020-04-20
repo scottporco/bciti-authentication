@@ -1,0 +1,46 @@
+/*------------------------------------------------------------------
+[Dashboard layout files]
+
+Project:        bciti lite
+Version:        1.0
+Primary use:    bciti layout 
+-------------------------------------------------------------------*/
+
+// @import "compass/css3";
+@import "../material-overwrite.scss";
+@import "../layout-variables.scss";
+@import "../colors";
+@import "../typography";
+@import "../mixins";
+@import "./menu.scss";
+@import "./main-content-area.scss";
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font: 15px/1 fontFamily;
+  color: #777;
+}
+
+@import './menu.scss';
+
+@import './main-content-area.scss';

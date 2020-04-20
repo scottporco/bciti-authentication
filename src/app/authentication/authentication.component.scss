@@ -1,0 +1,24 @@
+@import "../global-styling/colors";
+@import "../global-styling/buttons/buttons";
+@import "../global-styling/mixins";
+
+.box.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrapper {
+    height: 100vh;
+    border: solid 1px #979797;
+    background-color: $bciti-gray-light;
+}
+
+.login-box {
+    position: relative;
+    width: 654px;
+    height: 487px;
+    box-shadow: 0 26px 26px 0 rgba(10, 31, 68, 0.12), 0 0 10px 0 rgba(10, 31, 68, 0.1);
+    border: solid 1px $bciti-gray-lightest;
+    background-color: $white;
+}

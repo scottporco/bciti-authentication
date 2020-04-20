@@ -1,0 +1,169 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$bciti-authentication-primary: mat-palette($mat-indigo);
+$bciti-authentication-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$bciti-authentication-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$bciti-authentication-theme: mat-light-theme(
+    $bciti-authentication-primary,
+    $bciti-authentication-accent,
+    $bciti-authentication-warn
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($bciti-authentication-theme);
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$bciti-authentication-primary: mat-palette($mat-indigo);
+$bciti-authentication-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$bciti-authentication-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$bciti-authentication-theme: mat-light-theme(
+    $bciti-authentication-primary,
+    $bciti-authentication-accent,
+    $bciti-authentication-warn
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($bciti-authentication-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+// @import "./app/global-styling/typography.scss"
+@import "./app/global-styling/mixins.scss";
+@import "./app/global-styling/typography.scss";
+@import "../node_modules/frow/dist/frow.min.css";
+
+// REFACTOR LATER IN PROPER FILES AND FOLDERS
+form {
+    label {
+        @include fontStyle($fontFamily, 0.775rem, $regularWeight, 1.14, $bciti-gray-darkest);
+    }
+
+    input {
+        @include fontStyle($fontFamily, 1rem, $regularWeight, 1.14, $bciti-gray-darkest);
+    }
+}
+
+// FORM STYLES
+input {
+    margin: 5px 0 0 0;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 1px #b5bfd1;
+}
+
+// BUTTONS
+@mixin generateButton($backgroundColor, $fontSize, $borderRadius, $color, $paddingY, $paddingX) {
+    border-radius: $borderRadius;
+    border-color: $backgroundColor;
+    background-color: $backgroundColor;
+    padding: $paddingY $paddingX;
+
+    @include fontStyle($fontFamily, $fontSize, $regularWeight, 1.14, $color);
+
+    /* unvisited link */
+    &:link {
+        color: $color;
+        border-color: $backgroundColor;
+        background-color: $backgroundColor;
+    }
+
+    /* visited link */
+    &:visited {
+        color: $color;
+        border-color: $backgroundColor;
+        background-color: $backgroundColor;
+    }
+
+    /* mouse over link */
+    &:hover {
+        color: $color;
+        @if $backgroundColor != white {
+            background-color: darken($backgroundColor, 5%);
+            border-color: darken($backgroundColor, 5%);
+        } @else {
+            border-color: $backgroundColor;
+            background-color: $backgroundColor;
+        }
+    }
+
+    /* selected link */
+    &:active {
+        @if $backgroundColor != white {
+            color: $color;
+            background-color: darken($backgroundColor, 10%);
+            border-color: darken($backgroundColor, 10%);
+        } @else {
+            color: darken($color, 25%);
+            border-color: $backgroundColor;
+            background-color: $backgroundColor;
+        }
+       
+    }
+
+    &:focus {
+        color: $color;
+        @if $backgroundColor != white {
+            background-color: darken($backgroundColor, 10%);
+            border-color: darken($backgroundColor, 10%);
+        } @else {
+            border-color: $backgroundColor;
+            background-color: $backgroundColor;
+        }
+    }
+
+}
+
+.button-darkblue {
+    @include generateButton($bciti-blue-dark, 1rem, 22.5px, $white, 10px, 40px);
+}
+
+.button-text-blue {
+    @include generateButton($white, 1rem, 0, $bciti-blue, 5px, 5px);
+}
+
+.button-sm-text-blue {
+    @include generateButton($white, 0.875rem, 0, $bciti-blue, 5px, 5px);
+}

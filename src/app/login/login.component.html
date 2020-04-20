@@ -1,0 +1,36 @@
+<img src="../assets/bciti-logo.png" alt="" class="center-image">
+
+<form class="login-form" id="loginForm">
+    <div>
+        <label class="blue">
+            Email
+            <input type="text" placeholder="Email" value="">
+        </label>
+    </div>
+    <div>
+        <label class="blue">
+            Password
+            <input type="password" placeholder="Password" value="">
+        </label>
+    </div>
+</form>
+
+<div class="frow start login-action-buttons forgot-password" id="forgotPassword">
+    <button (click)="forgotPassword()" class="button-text-blue">
+        Forgot password ?
+    </button>
+</div>
+
+
+<div class="frow justify-between login-action-buttons" id="loginActionButtons">
+    <div class="grid-example-square">
+        <button (click)="register()" routerLinkActive="router-link-active" class="button-text-blue">
+            Create an account
+        </button>
+    </div>
+    <div class="">
+        <button class="button-darkblue">
+            Connect
+        </button>
+    </div>
+</div>

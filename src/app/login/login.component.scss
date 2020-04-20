@@ -1,0 +1,19 @@
+@import "../global-styling/colors";
+@import "../global-styling/buttons/buttons";
+@import "../global-styling/mixins";
+
+.center-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.login-form {
+    width: 50%;
+    margin: 20px auto 5px auto;
+}
+
+.login-action-buttons {
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px 5%;
+}
